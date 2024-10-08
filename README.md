@@ -59,5 +59,5 @@ The current simulated path width is $181 um$.
 
 <img src="/img/xz.png" width="600">
 <img src="/img/yz.png" width="600">
-<img src="/img/contour.png" width="600">
+<img src="/img/contours.png" width="600">
 <img src="/img/width.png" width="600">
