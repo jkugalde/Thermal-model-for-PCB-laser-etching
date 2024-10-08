@@ -55,8 +55,9 @@ The process parameters are:
 
 The current simulated path width is $181 um$.
 
-<img img="/images/xy.png" width="600">
-<img img="/images/xz.png" width="600">
-<img img="/images/yz.png" width="600">
-<img img="/images/contour.png" width="600">
-<img img="/images/width.png" width="600">
+<img src="/img/xy.png" width="600">
+
+<img src="/img/xz.png" width="600">
+<img src="/img/yz.png" width="600">
+<img src="/img/contour.png" width="600">
+<img src="/img/width.png" width="600">
