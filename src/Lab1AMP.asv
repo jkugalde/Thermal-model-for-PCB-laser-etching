@@ -3,7 +3,7 @@ tic
 
 % Parameters for process
 
-eta = 0.27; % Process efficiency (calibrated for measured width "w_meas")
+eta = 0.27; % Process efficiency
 P = 1600*10^-3; % Irradiation in Watts
 v = 800/60*10^-3; % Speed of source m/s
 N=1; % Number of passes
@@ -41,7 +41,7 @@ Tmat=zeros(nx,ny,nz);
 %Experimental data
 
 m = [172 163 177 177 165]; % width measures in black resin ablation
-w_meas = mean(m);
+weas = mean(m);
 
 %Calculation
 
@@ -142,9 +142,8 @@ legend('VAP contour','VAP depth')
 
 figure
 
-yzslice=find(x==x1*10^-6);
 [Y,Z]=meshgrid(y*10^6,z*10^6);
-pcolor(Y,Z,transpose(squeeze(Tmat(yzslice,:,:))),EdgeColor="none")
+pcolor(Y,Z,transpose(squeeze(Tmat(1000/delta,:,:))),EdgeColor="none")
 title('Tlim(y,z)')
 xlim([ymin ymax]);
 ylim([zmin zmax]);
@@ -157,9 +156,9 @@ clim([25 300])
 c.Label.String = 'T[°C]';
 
 figure
-
+yzslice=find()
 [Y,Z]=meshgrid(y*10^6,z*10^6);
-[M,C]=contour(Y,Z,transpose(squeeze(Tmat(yzslice,:,:))),[300 300],'ShowText','on','LabelSpacing',500);
+[M,C]=contour(Y,Z,transpose(squeeze(Tmat(1000/delta,:,:))),[300 300],'ShowText','on','LabelSpacing',500);
 xlabel('y[\mum]')
 ylabel('z[\mum]')
 xlim([ymin ymax]);
@@ -185,5 +184,5 @@ legend('VAP contour','VAP depth')
 % ylabel('y[\mum]')
 % ax = gca;
 % ax.FontSize = 13;
- 
+% 
 % toc

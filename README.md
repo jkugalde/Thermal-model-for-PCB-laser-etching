@@ -19,7 +19,7 @@ Heat propagation in $x,y,z$ directions from a point in the material, quasi-stati
 - Constant thermal properties
 
 
- $ T(\xi , y , z) = T_{0}+ \eta \cdot \frac{P}{2 \pi k r} e^{\frac{-v}{2 \alpha}(\xi +r)}$
+ $ T(\xi , y , z) = T_{0}+ \eta \cdot \frac{P}{2 \pi k r} e^{\frac{-v}{2 \alpha}(\xi +r)} $
 
 Where:
 
@@ -49,15 +49,17 @@ The process parameters are:
 - $v=800$ $mm/min$
 - $P=1600$ $mW$
 - $c_{z}=10$
-- $\eta=0.3$
+- $\eta=0.27$
+
+The efficiency $\eta$ was calibrated to obtain a simulated width similar to the experimental width. The average experimental width for black paint was $170.8 um$, using 5 data points.
 
 ### Results
 
-The current simulated path width is $181 um$.
+The current simulated path width is around $171 um$, and the max depth is $8.4 um$. Only the xy graphs below have the right proprortions.
 
 <img src="/img/xy.png" width="600">
-
+<img src="/img/xywidth.png" width="600">
 <img src="/img/xz.png" width="600">
+<img src="/img/xzdepth.png" width="600">
 <img src="/img/yz.png" width="600">
-<img src="/img/contours.png" width="600">
-<img src="/img/width.png" width="600">
+<img src="/img/yzdepth.png" width="600">
